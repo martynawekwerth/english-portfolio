@@ -6,7 +6,7 @@
     <title>ToDo List</title>
     <script src="https://kit.fontawesome.com/47c449506d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="toDoList.css">
+    <link rel="stylesheet" href="../css/toDoList.css">
 </head>
 <body>
     <div class="todo">
@@ -15,38 +15,39 @@
             <input type="text" class="todo-input" placeholder="Add text...">
             <button class="add-btn">Add</button>
         </div>
+        <div class="todo-list">
+            <h3>Tasks list</h3>
+            <p class="alert-infro">You don't have tasks</p>
+            <ul>
+                <li id="test">
+                    Drink coffee
+                    <div class="tools">
+                        <button class="complete"><i class="fas fa-check"></i></button>
+                        <button class="edit"><i class="fas"></i>EDIT</button>
+                        <button class="delete"><i class="fas fa-times"></i></button>
+                    </div>
+                </li>
+                <li id="test2">
+                    Drink coffee
+                    <div class="tools">
+                        <button class="complete"><i class="fas fa-check"></i></button>
+                        <button class="edit"><i class="fas"></i>EDIT</button>
+                        <button class="delete"><i class="fas fa-times"></i></button>
+                    </div>
+                </li>
+                <li id="test3">
+                    Drink coffee
+                    <div class="tools">
+                        <button class="complete"><i class="fas fa-check"></i></button>
+                        <button class="edit"><i class="fas"></i>EDIT</button>
+                        <button class="delete"><i class="fas fa-times"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div class="todo-list">
-        <h3>Tasks list</h3>
-        <p class="alert-infro">You don't have tasks</p>
-        <ul>
-            <li id="test">
-                Drink coffee
-                <div class="tools">
-                    <button class="complete"><i class="fas fa-check"></i></button>
-                    <button class="edit"><i class="fas"></i>EDIT</button>
-                    <button class="delete"><i class="fas fa-times"></i></button>
-                </div>
-            </li>
-            <li id="test2">
-                Drink coffee
-                <div class="tools">
-                    <button class="complete"><i class="fas fa-check"></i></button>
-                    <button class="edit"><i class="fas"></i>EDIT</button>
-                    <button class="delete"><i class="fas fa-times"></i></button>
-                </div>
-            </li>
-            <li id="test3">
-                Drink coffee
-                <div class="tools">
-                    <button class="complete"><i class="fas fa-check"></i></button>
-                    <button class="edit"><i class="fas"></i>EDIT</button>
-                    <button class="delete"><i class="fas fa-times"></i></button>
-                </div>
-            </li>
-        </ul>
-    </div>
+    
 
     <div class="popup">
         <h3>Edit task:</h3>
@@ -58,6 +59,6 @@
         </div>
     </div>
     
-    <script src="toDoList.js"></script>
+    <script src="../js/toDoList.js"></script>
 </body>
 </html>
