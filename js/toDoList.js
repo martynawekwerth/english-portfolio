@@ -36,11 +36,22 @@ const prepareDOMEvents = () => {
 }
 
 const addNewTask = () => {
-    console.log('ok');
+    if ($todoInput.value !== '') {
+        $idNumber++;
+        $newTask = document.createElement('li');
+        $newTask.innerText = $todoInput.value;
+        $newTask.setAttribute('id', 'todo-${$idNumber}');
+        $ulList.appendChild($newTask);
+
+        $todoInput.value = '';
+        $alertInfo.innerText = '';
+    } else {
+        $alertInfo.innerText = 'Enter task value!';
+    }
 }
 
 const enterCheck = () => {
-    if (event.keyCode === 13) {
+    if (event.key === 13) {
         addNewTask();
     }
 }
