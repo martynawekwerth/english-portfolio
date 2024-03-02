@@ -32,10 +32,17 @@ const prepareDOMElements = () => {
 
 const prepareDOMEvents = () => {
     $addBtn.addEventListener('click', addNewTask);
+    $todoInput.addEventListener('keyup', enterCheck);
 }
 
 const addNewTask = () => {
     console.log('ok');
+}
+
+const enterCheck = () => {
+    if (event.keyCode === 13) {
+        addNewTask();
+    }
 }
 
 document.addEventListener('DOMContentLoaded', main);
